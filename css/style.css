@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'title';
+  src: url('../fonts/basictitlefont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+
+.test{
+	position: fixed;
+	left:-300px;
+	top:0;
+	z-index: 1;
+	padding: 25px;
+}
+
+.test a{
+	outline: none;
+	color: #fff;
+	font-size: 36px;
+	font-family: 'title';
+	text-decoration: none;
+}
+
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  cursor: url(../img/cursor.svg), auto;
+}
+
+.ctn{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.inner{
+	position: relative;
+}
+
+.txt-ctn .inner{
+	top: -130px;	
+}
+
+.title{
+  font-family: 'title';
+  font-size: 59px;
+  line-height: 1.32;
+  letter-spacing: 1.2px;
+  overflow: hidden;
+}
+
+.title .inner{
+	top: 70px;
+}
+
+.txt-ctn hr{
+	width: 0;
+	opacity: 0;
+	margin: 0 auto;
+	margin-top: 0;
+	border-color: rgba(255, 255, 255, 0.3);	
+}
+
+.sub-title{
+  overflow: hidden;
+	margin: 0 auto;
+  width: 600px;
+  font-family: 'Lato';
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.67;
+  letter-spacing: 0.4px;
+  color: rgba(255, 255, 255, 0.3);	
+}
+
+.sub-title .inner{
+	top: -60px;
+}
+
+.logo{
+	margin-top: 80px;
+}
+
+.logo img{
+  width: 97px;
+  height: 127px;
+	opacity: 0;  
+  filter: blur(10px);
+  transform: translate(30px, 50px) rotateZ(-90deg);
+}
+
+.logo-txt{
+	position: relative;
+	margin: 0 auto;
+	margin-top: 25px;	
+  width: 340px;
+  height: 98px;
+}
+
+.logo-txt-inner{
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	z-index: 0;
+}
+
+.logo-txt img{
+	height: 100%;
+}
+
+.o-bg{
+	height: 40px;
+	width: 40px;
+	border-radius: 20px;
+	background: #0d1015;
+	position: absolute;
+	top: 20px;
+	left: 5px;
+}
+
+img.o-glow{
+	opacity: .7;
+	position: absolute;
+	top: 0;
+	left: 0;
+  animation: fade-inf 10s infinite;
+  animation-delay: 2s;
+}
+
+@keyframes fade-inf {
+  0%   { 	opacity: .7;	}
+  25%  {	opacity: 0; 	}
+  50%  {	opacity: .7; 	}
+  51%  {	opacity: .7; 	}
+  75%  {	opacity: 0; 	}
+  100% { 	opacity: .7; 	}
+}
+
+.canvas-ctn{
+	background-color: rgba(0,0,0,0);
+}

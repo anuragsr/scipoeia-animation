@@ -1,0 +1,30 @@
+@media 	(max-width: 1700px)	{
+	.txt-ctn, .test{
+		transform: scale(.9);
+	}	
+}
+
+@media 	(max-width: 1400px)	{
+	.txt-ctn, .test{
+		transform: scale(.7);
+	}	
+}
+
+@media 	(max-width: 1400px)	
+and (min-height: 900px)	{
+	.txt-ctn, .test{
+		transform: scale(.8);
+	}
+}
+
+@media 	(max-width: 1024px)	{
+	.txt-ctn, .test{
+		transform: scale(.5);
+	}	
+}
+
+@media 	(max-width: 768px)	{
+	.txt-ctn, .test{
+		transform: scale(.4);
+	}	
+}
